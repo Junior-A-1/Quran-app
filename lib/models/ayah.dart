@@ -2,14 +2,11 @@ class Ayah {
   final int number;
   final String text;
   final int numberInSurah;
-
   final int juz;
   final int manzil;
   final int page;
   final int ruku;
-
   final int hizbQuarter;
-  final bool sajda;
 
   Ayah({
     required this.number,
@@ -20,7 +17,6 @@ class Ayah {
     required this.page,
     required this.ruku,
     required this.hizbQuarter,
-    required this.sajda,
   });
 
   factory Ayah.fromJson(Map<String, dynamic> json) {
@@ -33,7 +29,6 @@ class Ayah {
       page: json['page'],
       ruku: json['ruku'],
       hizbQuarter: json['hizbQuarter'],
-      sajda: json['sajda'],
     );
   }
 }
